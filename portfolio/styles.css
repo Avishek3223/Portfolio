@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root{
+    --primary-color:#3f3d56; 
+    --secondary-color:#6c63ff
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+}
+.link{
+    text-decoration: none;
+    padding: 0rem 0.5rem;
+    box-sizing: border-box;
+
+}
+.link-primary{
+    background-color: var(--secondary-color);
+    max-width: 140px;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  
+}
+.link-secondary{
+    background-color: var(--secondary-color);
+    max-width: 140px;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  
+}
+
+.list-non-bullet{
+     list-style: none;
+    padding: 1rem 0rem;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+    text-decoration: none;
+}
+
+/* navigation */
+
+.navigation {
+   background-color:var(--primary-color);
+   color: white;
+   padding: 1rem;
+   border-bottom-left-radius: 1rem;
+}
+
+.nav-brand{
+    color: white;
+}
+.navigation .nav-brand{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.navigation .nav-pills{
+    text-align: right; 
+}
+.navigation .link{
+    color: white;
+    
+}
+.navigation .link-active{
+    font-weight: bold;
+}
+
+
+
+/* header */
+
+
+.hero{
+   padding: 2rem;
+}
+.hero .hero-img{
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    width: 550px;
+}
+.hero .hero-heading{
+  color: var(--secondary-color);
+  text-align: center;
+}
+.hero .hero-heading .heading-inverted{
+    color: var(--primary-color)
+}
+
+
+
+/* section */
+
+
+.section h1,p{
+   text-align: center;
+}
+.ow{
+    background-color: #f3f2f2;
+
+}
+.section{
+   text-align: center;
+   padding: 2rem;
+   margin: 2rem 0;
+   border-radius: 1rem;
+}
+    
+/* footer */
+
+.footer{
+    padding: 3rem 1rem;
+ text-align: center;
+ color: white;
+  border-top-right-radius: 1rem; 
+ background-color: var(--primary-color);
+}
+
+.footer .footer-header{
+    font-size: 1.3rem;
+}
+
+.footer .link{
+    color: white;
+}
