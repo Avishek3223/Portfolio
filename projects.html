@@ -1,31 +1,75 @@
-<html>
-<head>
-	<title>BMI Calculator</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-    	<div class="panel">
-    		<h2 class="text-center">Check your BMI</h2>
-    		
-    			<p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
-    			
-    			<form>
-    				<div id="weightInput">
-    					<p>Put your weight in here (KG)</p>
-    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
-    				</div>
-    				<div id="heightInput">
-    					<p>And your height in here (CM)</p>
-	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
-    				</div>
-    		     <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
-    		</form>
-    		<div id="results" class="text-center">Your BMI results will appear here</div>
-    	</div>
-    </div>
-	<script src="main.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home | Avishek Mishra</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-brand">Avishek Mishra</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link link-active" href="/">home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/Blogs.html">blogs</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <section class="section">
+      <div class="container container-center">
+        <h1>BMI Calculator</h1>
+        <p>
+         BMI cauculator stand for Body Mass Index calculator which can say weather you are underweight, normal, overweight or obese.
+        </p>
+        <a class="link link-primary" href="/project1.html">See Project</a>
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="container container-center">
+          <h1>Clock</h1>
+          <p>
+            I like to showcase my work and thus, you can see my projects hosted
+            online
+          </p>
+          <a class="link link-primary" href="/project3.html">See Project</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container container-center">
+          <h1>Guess The Numeber Game </h1>
+          <p>
+            I like to showcase my work and thus, you can see my projects hosted
+            online
+          </p>
+          <a class="link link-primary" href="/project4.html">See Project</a>
+        </div>
+      </section>
+
+    <footer class="footer">
+      <div class="footer-header">social media presence</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/neogcamp/"> github </a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/neogcamp"> twitter </a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://www.linkedin.com/company/neog-camp/">
+            linkedin
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
