@@ -31,3 +31,135 @@ body {
     text-wrap: balance;
   }
 }
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.circle-blur {
+  width: 220px; /* Set your desired width */
+  height: 200px; /* Set your desired height */
+  border-radius: 50%;
+  background: #00ffbf; /* Central color */
+  box-shadow: 0 0 0px 80px rgba(0, 255, 191, 0.5); /* Blur effect */
+  overflow: hidden;
+}
+
+.vignette-bottom {
+  position: relative;
+  display: inline-block;
+}
+
+.vignette-bottom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 65%,
+    rgba(0, 0, 0, 1) 85%
+  );
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.inter{
+  font-family: var(--font-inter);
+}
+
+.poppins{
+  font-family: var(--font-poppins);
+}
+
+.source {
+  font-family: var(--font-source-code-pro);
+}
+
+.bebas{
+  font-family: var(--font-bebas-neue);
+}
+
+/* First.module.css */
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.delay {
+  animation-delay: 0.5s;
+}
+
+.slideIn {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hide scrollbar for Webkit browsers */
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: just to ensure no scrollbar */
+}
+
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px white; /* Adjust the stroke width and color */
+  text-stroke: 2px white; /* Fallback for non-WebKit browsers */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 45s linear infinite;
+}
+
+@media (max-width: 600px) {
+  .rotate-90 {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.rainbow-text-animation {
+  background: linear-gradient(90deg, #ff8080, #ffa366, #ffcc99, #99ff99, #99ccff, #cc99ff, #e6ccff);
+  background-size: 600% 100%;
+  animation: rainbow 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
