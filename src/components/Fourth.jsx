@@ -62,7 +62,7 @@ const Fourth = () => {
       <div className='relative'>
         <div className="flex flex-col items-center">
           {/* Title and details */}
-          <div className="w-[80vw] bebas flex justify-between items-center pb-2 mb-4">
+          <div className="w-[80vw] bebas flex justify-between items-center pb-2">
             <h2 className="text-[2rem] -mt-[2rem] text-[#13866c] ">INTELLIGENT CLOUD APPLICATIONS</h2>
             <div className="flex flex-col space-x-4 text-right ">
               <span className="text-[1.3rem]">REMOTE</span>
@@ -72,10 +72,10 @@ const Fourth = () => {
           <div className='absolute top-7 w-[80vw] h-[0.1rem] bg-[#d1d1d1]'></div>
         </div>
       </div>
-      <div className="flex justify-between w-[80vw] mx-auto">
+      <div className="flex justify-between w-[80vw] mx-auto max600:flex-col">
         {/* Left side points */}
-        <div className="w-1/2 p-4">
-          <ul className="list-disc pl-5 source text-[1.2rem] text-justify space-y-2">
+        <div className="w-1/2 p-4 max600:w-[90vw]">
+          <ul className="list-disc pl-5 source text-[1.2rem] text-justify space-y-2 max600:text-[3vw] max600:pl-0 max600:pr-3">
             <li>Developed an admin website for performance tracking, including features like monthly and yearly income reports and member tracking using Chart.js, resulting in a 25% improvement in data accessibility.</li>
             <li>Contributed to a template-based website creation process, reducing development time for new sites by 40%.</li>
             <li>Integrated Twilio for class reminder notifications, increasing user engagement by 15%, and Razorpay for a single-page payment system, which improved payment processing speed by 20%.</li>
@@ -84,7 +84,7 @@ const Fourth = () => {
           </ul>
         </div>
         {/* Right side personal growth graph */}
-        <div className="w-[45%] p-4 flex justify-center items-center">
+        <div className="w-[45%] p-4 flex justify-center items-center max600:w-[90vw] max600:pl-0">
           <div className="w-full">
             <Line data={data} options={options} />
           </div>
