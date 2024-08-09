@@ -37,7 +37,7 @@ function Third() {
 
   return (
     <div className="bg-black flex flex-col items-center justify-center mt-[5rem]  text-white max600:mt-[5rem]">
-      <h1 className="text-[6vw] font-bold rainbow-text-animation tracking-wide mb-10 max600:text-[2.3rem]">PERSONAL PROJECT</h1>
+      <h1 className="text-[6vw] font-bold rainbow-text-animation tracking-wide mb-10 max600:text-[2.3rem] max600:text-center">PERSONAL PROJECT</h1>
       <div className="space-y-4 bebas w-full px-20 relative max600:px-6">
         {projects.map((project, index) => (
           <div

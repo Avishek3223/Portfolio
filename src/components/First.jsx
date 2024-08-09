@@ -4,7 +4,7 @@ import firstName from '../utils/first-name.png';
 import lastName from '../utils/last-name.png';
 import avishek from '../utils/AVISHEK.png';
 import about from '../utils/ABOUT.png';
-import facebookIcon from '../utils/github.png';
+import github from '../utils/github.png';
 import twitterIcon from '../utils/twitter-icon.png';
 import instagramIcon from '../utils/instagram-icon.png';
 import linkdin from '../utils/Linkdin-icon.png';
@@ -39,18 +39,18 @@ function First() {
 
       {/* Social Media Sidebar */}
       <div className="fixed top-3/4 right-0 z-50 slideIn delay transform -translate-y-1/2 flex flex-col gap-4 p-2 bg-[#15957E] max600:top-1/4">
-        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/avishek-mishra-6b3910272/" target="_blank" rel="noopener noreferrer">
           <Image src={linkdin} alt="TikTok" className="w-[2.5rem] max600:w-6" />
         </a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <Image src={facebookIcon} alt="Facebook" className="w-[2.5rem] max600:w-6" />
+        <a href="https://github.com/Avishek3223" target="_blank" rel="noopener noreferrer">
+          <Image src={github} alt="Facebook" className="w-[2.5rem] max600:w-6" />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/Avishek2323" target="_blank" rel="noopener noreferrer">
           <Image src={twitterIcon} alt="Twitter" className="w-[2.5rem] max600:w-6" />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
           <Image src={instagramIcon} alt="Instagram" className="w-[2.5rem] max600:w-6" />
-        </a>
+        </a> */}
       </div>
     </div>
   );

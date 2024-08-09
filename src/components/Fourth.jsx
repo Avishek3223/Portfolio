@@ -58,7 +58,7 @@ const options = {
 const Fourth = () => {
   return (
     <div className="w-[90vw] mx-auto mt-[7rem] max600:mt-[3rem]">
-      <h1 className="text-[6vw] text-center font-bold rainbow-text-animation tracking-wide mb-8 max600:text-[2.3rem] m-auto">WORK EXPERIENCE</h1>
+      <h1 className="text-[6vw] text-center font-bold rainbow-text-animation tracking-wide mb-8 max600:text-[2.3rem] m-auto max600:text-center">WORK EXPERIENCE</h1>
       <div className='relative'>
         <div className="flex flex-col items-center">
           {/* Title and details */}
